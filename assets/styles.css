@@ -1,0 +1,689 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.flag{
+    width: 15px;
+    
+}
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #ffff;
+    position: relative;
+    
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding: 0 10px 0 0;
+    position: relative;
+    bottom: 10px;
+    
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #7f8c8d;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black;;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      padding: 2% 0;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+
+
+
+
+.container{
+  width: 97vw; 
+}
+.cartoon{
+    /*background: url(" https://i.imgur.com/ksqOx5F.jpg");*/
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://i.imgur.com/ksqOx5F.jpg");
+   height: 70vh;
+   background-position: center;
+   background-size: cover;
+  
+   color: white;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.overlay{
+    width: 100%;
+  height: 100%;
+  background:  #000000b3;
+   opacity: .5;
+    position:absolute;
+    }
+    
+.main_heading{
+    font-size: 90px;
+    color: white;
+    margin-left: 150px;
+}
+.main_content{
+    font-size: 33px;
+    color: white ;
+    margin-left: 150px;
+}
+.apply_button{
+    display: block;
+    background-color: #4992ca;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-style: none;
+}
+.schedule{
+    display: block;
+    margin-top: 10px;
+    width: 170px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border-color: oldlace;
+}
+.learnmore{
+    display: block;
+    margin-top: 10px;
+    color: black;
+    border-radius: 15px;
+    height: 35px;
+    width: 30em;
+    border-style: none;
+}
+.btn-group{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.Pocket{
+    background-color:  #4992ca;
+    height: 80vh;
+    
+    flex-wrap: wrap;
+    color: white;
+    
+}
+.what{
+    text-align: center;
+    font-size: 45px;
+    
+    
+    }
+    .series{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .japan{
+        width: 75%;
+       margin: auto;
+    }
+    .basic{
+        display: flex;
+      margin: 30px auto 20px auto;
+        text-align: center;
+    }
+    .fa{
+       font-size: 20px;
+       margin: 20px;
+      }
+      .fas{
+          font-size: 1.5em;
+      }
+      .common{
+          justify-content: center;
+          align-items: center;
+      }
+
+    .Statistics{
+        background-color: transparent;
+       text-align: center;
+        height: auto;
+        justify-content: space-between;
+        
+        
+    }
+    .ongo{
+         margin-top: 10px;
+        font-size: 45px;
+      
+        
+    }
+    .pound{
+      display: flex;
+       justify-content: center;
+      margin: auto; 
+    }
+    .weight{
+        flex-wrap: wrap;
+        width: 37vw;
+    }
+    .app{
+        flex-wrap: wrap;
+       width: 37vw;
+    }
+    .loss{
+       font-size: 30px;
+       
+    }
+    .potential{
+        margin-top: 15px;
+        justify-content: center;
+        
+    }
+    .time{
+        flex-wrap: wrap;
+    }
+
+
+
+    .revealed{
+     height: auto;
+     font-family: Avenir-Next,Roboto,sans-serif;
+     font-weight: 100;
+     color:  #424242;
+     
+    
+     
+        }
+        .year{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        .speed{
+             position: relative;
+             top: 1.5em;
+           
+        }
+    .greninja{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .lucario{
+        display: flex;
+        justify-content: center;
+    }
+    .mimikyu{
+        display: flex;
+        justify-content: center;
+    }
+    .Charizard{
+        display: flex;
+        margin-left: 27px;
+        justify-content: center;
+    }
+    .nin{
+        width: 10em;
+        height: 10em;
+        padding-right: 20px;
+        
+    }
+    .rio{
+        
+        width: 7em;
+        height: 3em;
+    }
+    .luca{
+        width: 10em;
+        height: 10em;
+    }
+    .char{
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        position: relative;
+        right: 1.9em;
+}
+.mimi{
+    width: 10em;
+        height: 10em;
+}
+.spin{
+    justify-content: center;
+    font-size: 16px;
+}
+.itis{
+    
+    text-align: center;
+}
+.froakie{
+    text-align: justify;
+    width: 40em;
+    margin-left: 40px;
+}
+
+.qanda{
+background-color:#4992ca;
+
+margin-top: 30px;
+height: 65vh;
+color: white;
+}
+
+.Q{
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    top: 20px;
+    }
+.able{
+    margin-left: 10em;
+}
+.evolve{
+    margin-left: 10em;
+    
+}
+.bumped{
+    width: 60vw;
+    margin: auto;
+    list-style-type: circle;
+}
+.most{
+ margin-top: 20px;
+}
+.every{
+    margin-top: 20px;
+}
+.should{
+    margin-top: 30px;
+}
+
+td, th {
+    border: 1px black solid;
+    padding: 5px;
+}
+td {
+    color: #8a8a8a;
+}
+
+.tcenter{
+    text-align: center;
+}
+.chart{
+    width: 65vw;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+.same{
+    margin-top: 10px;
+}
+.rock{
+    width: 150em;
+   
+}
+.col{
+    width: 50em;
+}
+.battel{
+text-align: center;
+font-size: 30px;
+margin-top: 20px;
+}
+.getyou{
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+.buy {
+    background-color: #4992ca;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin-top: 9px ;
+    cursor: pointer;
+}
+.knowmore{
+    height: 30vh;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
+.white{
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.click {
+	background: rgba(0,0,0,0);
+	border: 1px white solid;
+	color: white;
+	padding: 10px;
+	width: 200px;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.Torrent{
+    height: auto;
+}
+.card {
+	background-color: white;
+	width: 15%;
+	padding: 0;
+	padding-bottom: 20px;
+	border: 2px #F0F0F0 solid;
+}
+.cardback {
+	background-color: #F0F0F0;
+	border-top: 20px #4992ca solid;
+}
+.Kalos{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.Poke{
+    height: 120vh;
+background-color: #4992ca
+}
+.umi{
+    width: 10em;
+        height: 10em;
+        position: relative;
+    left: 20px;
+}
+
+.luc{
+    width: 10em;
+    height: 10em;
+   
+}
+
+.har{
+    width: 10em;
+    height: 10em; 
+    position: relative;
+    right: 20px;
+}
+.cards_container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card2 {
+    width: 478px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 8px;
+    line-height: 24px;
+  
+  }
+  
+  .card-sub-heading {
+    font-weight: 700;
+    height: 45px;
+    color: #3c3333;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card-header {
+    margin-bottom: 0;
+    padding-left: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.125) solid;
+    border-top: 16px #4992ca solid;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+
+  .subscribe{
+      height: 30vh;
+  }
+
+  .email {
+	padding: 10px;
+	width: 300px;
+   position: relative;
+   top: 60px;
+}
+.channel{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    top: 45px;
+    color: #F0F0F0;
+}
+.click{
+    position: relative;
+    top: 60px;
+}
+.gamimg {
+	width: 150px;
+	height: 200px;
+}
+.sleep{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ios{
+    width: 18em;
+    text-align: center;
+}
+.pok{
+    font-size: 36px;
+    text-align: center;
+}
+.pokgam{
+   position: relative;
+   top: 20px;
+}
+.see{
+    
+    position: relative;
+    top: 20px;
+   left: 42em;
+    width: 180px;
+    height: 35px;
+    background-color: #4992ca;
+    color: white;
+}
+.andro{
+    position: relative;
+    bottom: 10px;
+}
+.composer{
+    display: flex;
+    position: relative;
+    top: 70px;
+    width: 65vw;
+    
+
+    margin: auto;
+    color: #F0F0F0;
+}
+.producer{
+    background-color: #4992ca;
+    margin-top: 45px;
+    height: 77vh;
+}
+.designer{
+    text-align: center;
+    font-size: 35px;
+    color: #F0F0F0;
+    position: relative;
+    top: 50px;
+}
+.pad {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.desimg {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+.juni{
+    text-align: center;
+}
+.masu{
+    padding: 10px;
+}
+.mons{
+    display: flex;
+    
+   justify-content: center;
+    
+}
+.emon{
+    margin: 50px;
+    justify-content: space-between;
+}
+.pokemo{
+    width: 200px;
+    height: 70px;
+}
+.capt{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+    font-family: Avenir-Next,Roboto,sans-serif;
+}
+.iron{
+    text-align: center;
+   position: relative;
+   top: 40px;
+}
+.thor {
+	background-color: #4992ca;
+	padding: 50px;
+	margin: 0;
+
+}
+.thor h2 {
+	color: white;
+	text-align: center;
+    font-size: 45px;
+}
+.thanos{
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin: 20px;
+    font-size: 16px;
+}
+footer {
+	background: #040127;
+	color: white;
+	height: 25vh;
+	
+}
+
+
+ul {
+	list-style: none;
+}
+.loki{
+    display: flex;
+    position: relative;
+    top: 40px;
+    justify-content: center;
+;
+}
+.selvi{
+    
+    text-align: center;
+    margin-left: 80px;
+    justify-content: center;
+    padding-left: 30px;
+}
+.loki h6{
+    font-size: 16px;
+}
+.selvi ul{
+    font-size: 16px;
+}
+.selvi ul li{
+    margin: 2px;
+}
